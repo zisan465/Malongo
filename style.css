@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*
+Header Section Design
+*/
+.header{
+    padding-bottom: 10px;
+}
+.header-subHeader{
+    display: grid;
+    grid-template-columns: 275px auto;
+}
+.header-subHeader h1{
+    font-size: 4rem;
+}
+.header-subHeader a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 41px 0 0 0;
+}
+.header-subHeader2{
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 28px;
+}
+
+/*
+Input Bar design
+*/
+input:focus{  
+    border:2px solid #32BECE;
+}
+input,button[type='submit'],button.conform,button.cancel{
+    outline: none;
+    width: 100%; 
+    font-size: larger;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    position: relative;
+
+}
+button[type='submit'],button.conform,button.cancel{
+    cursor: pointer; 
+}
+input[type="datetime-local"]{
+    position: absolute;
+    right:2%;
+    top: 50px;
+    width:0;
+    outline: none;
+    border: none;
+}
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    height: 20px;
+    width:50%;
+    position: absolute;
+    right:15%;
+    cursor: pointer;
+}
+input[type="datetime-local"]:focus{
+    background-color: #32bece73;
+}
+
+
+/*
+Details Information Section Design Here
+*/
+#main_table{
+    width: 100%;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: larger;
+   text-align: center;
+}
+.allDetails{
+    max-height:70vh; 
+    display: block;
+    overflow-y: scroll;
+}
+.allDetails tr td i{
+    font-size: 2rem;
+    display: block;
+    color: #32BECE;
+}
+/*
+Table Section Design Here
+*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.075);
+}
+thead, tbody tr,.tfoot tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;/* even columns width , fix width of table too*/
+}
+ .thead-dark th,.tfoot td{
+    color: #fff;
+    background-color: #32BECE;
+    border-color: #32BECE;
+    text-transform: uppercase;
+  }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+  }
+  .table tbody tr:hover {
+    background-color: rgba(50, 190, 206, 0.13);
+    cursor: pointer;
+ }
+.tfoot tr td{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+/*Scroll Bar Design*/
+.allDetails::-webkit-scrollbar {
+    width: 8px;
+  }
+  .allDetails::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    background-color: #d4ebfa;
+  }
+  .allDetails::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    background-color: rgb(134, 224 ,255);
+  }
+  .allDetails::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(0, 204, 255);
+  }
+
+
+
+
+
+/*
+PopUp Alert Design
+*/
+
+.popup-bar{
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    max-width: 400px;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.89);
+    overflow: hidden;
+    transition: .4s;
+}
+.showPopup{
+    top: 50%;
+}
+button.conform i{
+    padding: 0 6px;
+}
+button.cancel i {
+    padding: 0 8px;
+}

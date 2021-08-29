@@ -1,0 +1,45 @@
+@media (max-width: 576px) {
+.header-subHeader h1 {
+    font-size: 3rem;
+    line-height: 60px;
+}
+.header-subHeader a{
+    line-height: 10px;
+    display: block;
+    margin: 0;
+}
+.header-subHeader {
+    display:inline-block;
+}
+input[type="datetime-local"] {
+    right: 25px;
+    position: absolute;
+    top: 60px; 
+}
+.header-subHeader2 {
+    display:grid;
+    grid-template-columns: 48% 48%;
+}
+input, button[type='submit'], button.conform, button.cancel {
+    font-size: medium;
+    padding:  10px 8px;
+}
+.customize_date{
+    padding: 10px 20px;
+}
+button[type='submit']{
+    margin-top: 10px;
+    width: 208%;
+}
+.allDetails tr td i {
+    font-size:1.5rem;
+}
+.table-bordered th, .table-bordered td {
+    font-size: small;
+    padding: 10px;
+    overflow-x: hidden; 
+}
+.popup-bar{
+    min-width: 90%;
+}
+  }
